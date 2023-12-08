@@ -3,7 +3,7 @@
         <h1>方案比較</h1>
         <div class="container">
             <div class="compareForm">
-                <div class="form" style="background-color: rgba(256,256,256,.2);">
+                <div class="form" style="background-color: rgba(256,256,256,.2);border-top-left-radius: 16px;border-top-right-radius: 16px;">
                     <div class="tittle">
                     </div>
 
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-                <div class="form" style="background-color: rgba(256,256,256,.5);">
+                <div class="form" style="background-color: rgba(256,256,256,.5);border-bottom-left-radius: 16px;border-bottom-right-radius: 16px;">
                     <div class="form-05 form-header "></div>
                         <div class="form-05 form-button">
                         <button @click="scrollToHomeForm">了解更多</button>

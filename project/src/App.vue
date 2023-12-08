@@ -42,6 +42,9 @@
       <img @click="toggleNavHamBar" class="hamBar-close" :src="require('@/assets/closeIcon.png')">
     </div>
     
+    <div class="watermark">
+      <img :src="require('@/assets/watermark.png')">
+    </div>
 
     <router-view/>
     <footer class="footer">
@@ -59,7 +62,7 @@
         <h3 class="tittle">OMM攝影</h3>
         <div class="footerContainer">
           <p class="sub">聯絡人：榮恩 (Ron)</p>
-          <p class="sub">電話：0921-910-131 / 02-2873-2050</p>
+          <p class="sub">電話：<a href="tel:0921-910-131" style="color: #fff;">0921-910-131</a> / <a href="tel:02-2873-2050" style="color: #fff;">02-2873-2050</a></p>
           <p class="sub">MAIL: 1mmfilmtw@gmail.com</p>
         </div>
       </div>
@@ -354,6 +357,20 @@ body {
   z-index: 998;
 }
 
+.watermark {
+  position: fixed;
+  top: 125%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.watermark img {
+  width: 593.55px;
+  height: 156.49px;
+}
+
 .footer {
     overflow-x: hidden;
     display: flex;
@@ -441,6 +458,15 @@ body {
     width: 100%;
     margin-left:0;
     margin-right:0;
+  }
+  .watermark {
+    position: fixed;
+    top: 110%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .watermark img {
+    transform: scale(0.5);
   }
 }
 

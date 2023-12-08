@@ -1,7 +1,7 @@
 <template>
     <div class="Contact">
         <h1 class="tittle">▎聯絡我們</h1>
-        <div class="contactContant">
+        <div class="contactContant contactContant_pc">
             <div class="leftContainer">
                 <div class="container">
                     <label for="name">您的名字</label>
@@ -64,6 +64,67 @@
             </div>
         </div>
 
+        <div class="contactContant_ph">
+            <div class="contactContant" style="flex-direction: column; gap: 0px;display: flex;row-gap: 8px;">
+                <div class="container">
+                    <label for="name">您的名字</label>
+                    <input type="text" id="name" name="name" required
+                        v-model="from_name"
+                        placeholder="請輸入您的中/英文姓名">
+                </div>
+
+                <div class="container">
+                    <label for="phone">電話</label>
+                    <input type="text" id="phone" name="phone" required 
+                        v-model="phone_id"
+                        placeholder="請輸入您的電話">
+                </div>
+
+                <div class="container">
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" name="email" required 
+                        v-model="email_id"
+                        placeholder="請輸入您的電子郵件">
+                </div>
+
+                <div class="container" style="margin-bottom: 30px;">
+                    <label for="address">地址</label>
+                    <div class="customSelect slcFull">
+                        <select id="address" name="address" v-model="address_id" required style="background-color: #fff;font-size: 16px;">
+                            <option value="" disabled selected>請選擇地址/所在區域</option>
+                            <option value="台北">台北</option>
+                            <option value="新北">新北</option>
+                            <option value="基隆">基隆</option>
+                            <option value="基隆">桃園</option>
+                            <option value="基隆">新竹</option>
+                            <option value="基隆">苗栗</option>
+                        </select>
+                        <svg>
+                            <polygon points="8,12 2,4 14,4 "></polygon>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <label for="demand">您的需求</label>
+                    <div class="inputConatainer">
+                        <label>
+                            <input type='radio' name='editingType' value="4" v-model="needNum"> 純拍攝
+                        </label>
+                        <label>
+                            <input type='radio' name='editingType' value="5" v-model="needNum"> 純剪輯
+                        </label>
+                        <label>
+                            <input type='radio' name='editingType' value="6" v-model="needNum"> 拍攝+剪輯
+                        </label>
+                    </div>
+                    <input type="text" id="demand" name="demand" required 
+                        v-model="message"
+                        placeholder="請輸入">
+                </div>
+            </div>
+        </div>
+
         <div v-if="showSuccessMessage" class="successMsg">
             <img :src="require('@/assets/uiw_smile-o.png')">
             <p>收到您的表單囉！<br>將會有專人在1-3個工作天內聯絡您</p>
@@ -86,9 +147,11 @@ export default {
         phone_id: '',
         address_id: '',
         needNum: 1,
-        needText: '拍攝',
+        needText: '純拍攝',
         message: '',
     };
+  },
+  mounted() {
   },
   methods: {
     sendEmail() {
@@ -97,6 +160,7 @@ export default {
         email_id : this.email_id,
         phone_id : this.phone_id,
         address_id : this.address_id,
+        need_Text: this.needText,
         message : this.message,
       };
 
@@ -130,10 +194,16 @@ export default {
     getNeedText() {
       switch (parseInt(this.needNum)) {
         case 1:
-          return '拍攝';
+          return '純拍攝';
         case 2:
-          return '剪輯';
+          return '純剪輯';
         case 3:
+          return '拍攝+剪輯';
+        case 4:
+          return '純拍攝';
+        case 5:
+          return '純剪輯';
+        case 6:
           return '拍攝+剪輯';
         default:
           return '';
@@ -156,6 +226,9 @@ export default {
     height: 100%;
     padding-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.4);
+}
+.contactContant_ph {
+    display: none;
 }
 
 .tittle {
@@ -319,12 +392,18 @@ svg {
         height: 110%;
         padding-bottom: 50px;
     }
+    .contactContant_ph {
+        display: flex;
+    }
+    .contactContant_pc {
+        display: none;
+    }
     .tittle {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         padding-top: 50px;
-        padding-left: 5%;
+        padding-left: 10%;
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -341,9 +420,13 @@ svg {
     .inputConatainer {
         width: 100%;
     }
+    .inputConatainer label {
+        font-size: 18px;
+    }
     .inputConatainer input{
         width: 10px;
-        transform: scale(1);
+        height: 10px;
+        transform: scale(1.2);
     }
     .sendButton{
         margin-left: 0;
