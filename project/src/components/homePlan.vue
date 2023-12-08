@@ -87,20 +87,34 @@
         margin-top: -200px;
         height: 140%;
     }
+    .homePlan h1 {
+        font-size: 28px;
+        font-weight: 'NotoSansTC-Medium';
+        margin: 0;
+    }
     .planContant {
         flex-direction: column;
         align-items: center;
         gap: 50px;
     }
+    .planContainer h3 {
+        margin-top: 35px;
+    }
     .imgContainer img {
         width: 250px;
         height: 250px;
+    }
+    .imgContainer{
+        padding: 30px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .homePlan {
-        height: 185vh;
+        height: 165vh;
+    }
+    .imgContainer{
+        padding: 30px;
     }
 }
 </style>

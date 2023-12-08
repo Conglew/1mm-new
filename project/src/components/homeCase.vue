@@ -753,7 +753,7 @@ export default{
         height: 80vh;
     }
     .arrowGroup {
-        top: 150%;
+        top: 175%;
         justify-content: space-between;
     }
     .leftArrow {
@@ -785,7 +785,7 @@ export default{
         height: 100vh;
     }
     .arrowGroup {
-        top: 160vh;
+        top: 170vh;
         justify-content: space-between;
     }
 }

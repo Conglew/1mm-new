@@ -8,7 +8,8 @@
 
           <div  data-aos="fade-up" data-aos-duration="750" class="text-container">
               <h2>1 Minute Magic</h2>
-              <p>短影音製作專家 <br>創意滿點、速遞成稿<br>為短影音注入生命</p>
+              <p class="headerContainer">短影音製作專家 <br>創意滿點、速遞成稿<br>為短影音注入生命</p>
+              <p class="headerTag">#reels&emsp;#shorts&emsp;#tiktok&emsp;#直式影音</p>
               <button @click="scrollToHomeForm">了解詳情</button>
               <button @click="scrollToHomeForm">聯絡我們</button>
           </div>
@@ -52,7 +53,7 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 80%;
+  height: 100%;
   background-image: url(@/assets/Home/sky.png);
   background-size: cover;
   background-position: center;
@@ -66,7 +67,7 @@ export default {
   align-items: center;
   position: absolute;
   width: 100%;
-  top: 48%;
+  top: 60%;
   left: 50%;
   gap: 0;
   transform: translateX(-50%); 
@@ -83,15 +84,24 @@ export default {
 }
 
 .profolio .text-container h2{
-  font-size: 2rem;
-  font-weight: 450;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'NotoSansTC-Medium';
   color: #7741BD;
-  margin: -50px 0 30px 0;
+  margin: -50px 0 10px 0;
 }
 
-.profolio .text-container p {
-  font-size: 2.2rem;
+.profolio .text-container .headerContainer {
+  font-size: 32px;
   font-weight: bold;
+  font-family: 'NotoSansTC-Medium';
+  color: #000;
+  margin: 5px 0;
+}
+
+.profolio .text-container .headerTag {
+  font-size: 16px;
+  font-family: 'NotoSansTC-Regular';
   color: #000;
   margin: 0 0 30px 0;
 }
@@ -131,12 +141,12 @@ export default {
     background-position: 20%-95px;
   }
   .homeHeader  {
-    height: 90vh;
+    height: 110vh;
   }
   .profolio {
     flex-direction: column;
     align-items: center;
-    top: 65%;
+    top: 85%;
     transform: translate(-50%, -50%);
     gap: 80px;
   }
@@ -148,7 +158,7 @@ export default {
     height: 214px;
   }
   .profolio .text-container h2{
-    font-size: 1.75rem;
+    font-size: 2.2rem;
     font-weight: 450;
     color: #7741BD;
     font-family: 'NotoSansTC-Medium';
@@ -158,13 +168,14 @@ export default {
     font-size: 1.75rem;
     font-weight: bold;
     color: #000;
+    font-family: 'NotoSansTC-Light';
     margin: 0 0 20px 0;
   }
 }
 
 @media screen and (max-width: 375px) {
   .homeHeader  {
-    height: 100vh;
+    height: 120vh;
   }
   .profolio-sky {
     background-size: 250% 100%;

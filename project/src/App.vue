@@ -189,7 +189,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    font-size: 'NotoSansTC';
+    color: #000000;
 }
 
 .header {
@@ -359,7 +360,7 @@ body {
     justify-content: center;
     background-color: #4E4E4E;
     color: #ffffff;
-    padding: 10px 50px 40px;
+    padding: 40px 50px;
     width: 95%;
 }
 
@@ -369,20 +370,22 @@ body {
 }
 
 .footerContant .tittle {
-    width: 50%;
+    width: 60%;
+    font-size: 24px;
     margin-left:auto;
     margin-right:auto;
     text-align: start;
 }
 
 .footerContainer {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     text-align: start;
 }
 
 .footerContant p {
-    font-size: 0.65rem;
+    font-size: 16px;
+    margin: 5px 0;
 }
 
 @media screen and (min-width: 1800px) {
@@ -422,7 +425,7 @@ body {
     display: block;
   }
   .footer {
-    height: 45vh;
+    height: 60vh;
     flex-direction: column;
     padding: 10px 50px 130px 35px;
   }
@@ -445,6 +448,9 @@ body {
   .navBar {
     top: 80%; left: 0%;
     padding: 10px ;
+  }
+  .footer {
+    height: 75vh;
   }
 }
 </style>

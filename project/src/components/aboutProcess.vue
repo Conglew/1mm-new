@@ -176,7 +176,7 @@ export default {
 
 @media screen and (max-width: 545px) {
     .aboutProcess {
-        height: 170vh;
+        height: 150vh;
     }
     .processContainer_ph {
         flex-direction: column;
@@ -192,17 +192,24 @@ export default {
         align-items: center;
         text-align: start;
         width: 100%;
-        height: 220px;
+        height: 200px;
         gap: 30px;
     }
     .processProject h2 {
         color: #7741BD;
     }
+    .tittle {
+        margin-bottom: -25px;
+    }
+    .tittle h1 {
+        font-size: 28px;
+        margin: 0 0 50px;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .aboutProcess {
-        height: 220vh;
+        height: 185vh;
     }
 }
 </style>

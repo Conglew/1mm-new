@@ -1,7 +1,7 @@
 <template>
     <div class="homeSubTittle">
         <div class="subTittleBlob"></div>
-        <h1><strong style="color: #7741BD;">短影音打造全方位行銷體驗<br>建立深度客戶關係</strong></h1>
+        <h1>短影音打造全方位行銷體驗<br>建立深度客戶關係</h1>
     </div>
 </template>
 
@@ -17,6 +17,8 @@
 
 .homeSubTittle h1 {
     position: relative;
+    font-family: 'NotoSansTC-Medium';
+    color: #7741BD;
     z-index: 888;
 }
 .subTittleBlob {
@@ -43,6 +45,9 @@
     .homeSubTittle {
         height: 50vh;
         font-size: 0.8rem;
+    }
+    .homeSubTittle h1 {
+        font-size: 24px;
     }
     .subTittleBlob {
         top: 585%;

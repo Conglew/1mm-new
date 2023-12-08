@@ -135,7 +135,11 @@
     margin-bottom: 50px;
   }
   .Tittle h2 {
-    font-size: 2em;
+    font-size: 28px;
+  }
+  .Tittle p {
+    font-size: 15px;
+    font-family: 'NotoSansTC-Light';
   }
 }
 </style>

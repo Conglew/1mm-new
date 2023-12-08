@@ -86,7 +86,7 @@ export default {
 }
 
 .advContainer img {
-    height: 150px;
+    height: 135px;
     width: 150px;
 }
 
@@ -142,25 +142,34 @@ export default {
   }
   .advContant {
       margin-top: 25px;
+      margin-bottom: 35px;
       flex-direction: column;
       align-items: center;
+      gap: 30px;
   }
   .advContainer {
       padding: 35px 18px 20px;
       width: 250px;
-      height: 350px;
+      height: 325px;
+  }
+  .advContainer h2 {
+    font-size: 24px;
+    font-family: 'NotoSansTC-Medium';
+  }
+  .advContainer p {
+    font-size: 15px;
   }
   .Tittle {
       margin-top: 100px;
   }
   .Tittle h1 {
-      font-size: 1.85em;
+      font-size: 28px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .homeAdvantage {
-      height: 270vh;
+      height: 220vh;
   }
 }
 </style>

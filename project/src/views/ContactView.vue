@@ -1,6 +1,6 @@
 <template>
   <div class="Contact">
-      <h1 class="tittle">聯絡我們</h1>
+      <h1 class="tittle">▎聯絡我們</h1>
       <div class="contactContant">
           <div class="leftContainer">
               <div class="container">
@@ -19,6 +19,17 @@
 
               <div class="container">
                   <label for="demand">您的需求</label>
+                  <div class="inputConatainer">
+                        <label>
+                            <input type='radio' name='editingType' value="1" v-model="needNum" checked> 純拍攝
+                        </label>
+                        <label>
+                            <input type='radio' name='editingType' value="2" v-model="needNum"> 純剪輯
+                        </label>
+                        <label>
+                            <input type='radio' name='editingType' value="3" v-model="needNum"> 拍攝+剪輯
+                        </label>
+                </div>
                   <input type="text" id="demand" name="demand" required 
                       v-model="message"
                       placeholder="請輸入">
@@ -35,9 +46,20 @@
 
               <div class="container">
                   <label for="address">地址</label>
-                  <input type="text" id="address" name="address" required 
-                      v-model="address_id"
-                      placeholder="請輸入您的地址/所在區域">
+                  <div class="customSelect slcFull">
+                        <select id="address" name="address" v-model="address_id" required>
+                            <option value="" disabled selected>請選擇地址/所在區域</option>
+                            <option value="台北">台北</option>
+                            <option value="新北">新北</option>
+                            <option value="基隆">基隆</option>
+                            <option value="基隆">桃園</option>
+                            <option value="基隆">新竹</option>
+                            <option value="基隆">苗栗</option>
+                        </select>
+                        <svg>
+                            <polygon points="8,12 2,4 14,4 "></polygon>
+                        </svg>
+                    </div>
               </div>
           </div>
       </div>
@@ -137,6 +159,31 @@ methods: {
     border: .5px solid #000000;
     box-sizing: border-box;
 }
+.customSelect {
+  position: relative;
+}
+select {
+    appearance: none;
+    /*  safari  */
+    -webkit-appearance: none;
+    /*  other styles for aesthetics */
+    font-size: 14px;
+    padding: 8px;
+    width: 400px; height: 50px;
+    border: .5px solid #000000;
+    color: #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+svg {
+    position: absolute;
+    top: 185%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    fill: #000000;
+    pointer-events: none;
+}
 
 .contactContant label::after {
   content: " *";
@@ -176,6 +223,29 @@ methods: {
     }
 }
 
+.inputConatainer {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+.inputConatainer label {
+    font-size: 16px;
+    color: #989898;
+}
+.inputConatainer label::after {
+  content: " ";
+}
+.inputConatainer input{
+    width: 10px;
+    height: 15px;
+    transform: scale(2);
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+
 @media screen and (min-width: 1800px) {
     .Contact {
         height: 85vh;
@@ -191,8 +261,9 @@ methods: {
         /* display: flex;
         justify-content: center;
         align-items: center; */
-        padding-top: 150px;
-        padding-left: 20px;
+        padding-left: 5%;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
     .contactContant {
         flex-direction: column;
@@ -200,8 +271,18 @@ methods: {
         padding: 0px 10%;
         gap: 0;
     }
+    .contactContant label {
+        font-size: 18px;
+    }
     .contactContant input {
         width: 350px;
+    }
+    .inputConatainer {
+        width: 100%;
+    }
+    .inputConatainer input{
+        width: 10px;
+        transform: scale(1);
     }
     .Contact button {
         margin-left: 0;
@@ -210,6 +291,15 @@ methods: {
         position: relative;
         left: 50%; 
         transform: translateX(-50%);
+    }
+    .container {
+        width: 100%;
+    }
+    .customSelect {
+        width: 100%;
+    }
+    select {
+        width: 100%;
     }
 }
 

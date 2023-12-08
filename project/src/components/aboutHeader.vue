@@ -112,6 +112,9 @@ export default {
 }
 
 @media screen and (max-width: 545px) {
+  .left-container h1 {
+    font-size: 26px;
+  }
   .aboutHeader {
     height: 85vh;
   }
@@ -123,7 +126,7 @@ export default {
     flex-direction: column;
   }
   .left-container {
-    width: 88%;
+    width: 75%;
     padding-left: 0;
   }
   .aboutContent_ph .right-container img{

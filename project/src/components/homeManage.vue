@@ -36,7 +36,7 @@
 
                 <div class="text-container">
                     <h2 style="white-space: nowrap;">為什麼要做短影音</h2>
-                    <h4>#傳播快 &nbsp; #互動性強 &nbsp; #形式多樣 &nbsp; #精準溝通 &nbsp; #成本低</h4>
+                    <h4>#傳播快 &nbsp; #互動性強 &nbsp; #形式多樣 &nbsp; #精準溝通 #成本低</h4>
                     <h3>短影音是現今數位世界主要媒介之一 <br> 🚀 現在就開始！無論你是要推廣產品、分享經驗、還是激發靈感，短影音都是你的最佳選擇。</h3>
                     <button @click="scrollToHomeForm">了解更多</button>
                 </div>
@@ -108,8 +108,9 @@ export default {
 }
 
 .tittle h1 {
-    font-size: 3em;
-    font-family: 'NotoSansTC-Regular';
+    font-size: 48px;
+    font-family: 'NotoSansTC-Medium';
+    color: #000;
 }
 
 .Managecontainer {
@@ -150,13 +151,14 @@ export default {
 .text-container h2 {
     margin-top: 0;
     margin-bottom: 40px;
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 450;
     color: #7741BD;
-    font-family: 'NotoSansTC-Bold';
+    font-family: 'NotoSansTC-Medium';
 }
 
-.text-container h3 {
+.text-container h3, .text-container h4 {
+    font-size: 16px;
     font-family: 'NotoSansTC-Light';
     letter-spacing: 5.5%;
 }
@@ -196,20 +198,20 @@ export default {
     .ManageBlob {
         background-size: 350% 100%;
         height: 248vh;
-        top: 145%
+        top: 160%
     }
     .homeManage {
         height: 185%;
         margin-top: -200px;
     }
     .tittle {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .manageContant-1 ,.manageContant-2 {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        margin-bottom: 70px;
+        gap: 10px;
+        margin-bottom: 50px;
     }
     .manageContant-2-01 {
         display: none;
@@ -226,9 +228,17 @@ export default {
         text-align: center;
     }
     .tittle h1 {
-        font-size: 1.85em;
+        font-size: 28px;
     }
-
+    .text-container h2 {
+        font-size: 24px;
+    }
+    .text-container h3 {
+        font-size: 18px;
+    }
+    .text-container h4 {
+        margin: 0;
+    }
     .text-container h3, .text-container h4 {
         text-align: start;
     }
@@ -237,11 +247,11 @@ export default {
 @media screen and (max-width: 375px) {
     .ManageBlob {
         background-size: 350% 100%;
-        height: 285vh;
+        height: 300vh;
         top: 155vh;
     }
     .homeManage {
-        height: 235vh;
+        height: 215vh;
     }
     .text-container {
         width: 120%;

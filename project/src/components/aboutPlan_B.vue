@@ -1,7 +1,7 @@
 <template>
     <div class="aboutPlan">
         <div class="Tittle">
-            <h1>選擇專屬於你的OMM方案</h1>
+            <h1>選擇你的OMM方案</h1>
             <!-- <p>描述描述描述描述描述描述描述描述描述描述描述</p> -->
         </div>
 
@@ -75,7 +75,7 @@
                 <h2>標準版</h2>
             </div>
 
-            <div :class="['planClsBox', { 'active': 1 === activePlan }]" @click="setActivePlan(1)">
+            <div :class="['planClsBox', 'isFillCls' , { 'active': 1 === activePlan }]" @click="setActivePlan(1)">
                 <div style="flex-direction: column;">
                     <h2 style="margin: 0;">完整版</h2>
                     <p style="margin: 3px 0 0 0; padding: 3px 15px; font-weight: bold; border-radius: 15px ;background-color: #F195BF;color: #fff;">最多人選擇</p>
@@ -260,6 +260,7 @@ export default {
 }
 .cancept p {
     margin: 0 20px 2.5px;
+    font-weight: bold;
 }
 
 .leftContainer button, .rightContainer button {
@@ -298,6 +299,18 @@ export default {
         width: 85%;
         height: 810px;
     }
+    .rightContainer {
+        background-color: rgba(255,255,255,0.7);
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom right, 
+            rgb(218, 174, 53),
+            rgb(246, 220, 117),
+            rgb(207, 162, 56),
+            rgb(246, 220, 117),
+            rgb(228, 197, 92)
+        ) 30; /* 使用线性渐变作为边框图像 */
+        border-radius: 0px; 
+    }
     .containerMain {
         padding: 0px 20px;
     }
@@ -310,8 +323,20 @@ export default {
     .Tittle {
         margin-bottom: 10px;
     }
+    .planClsBox.isFillCls.active {
+        background-color: white;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to bottom right, 
+            rgb(218, 174, 53),
+            rgb(246, 220, 117),
+            rgb(207, 162, 56),
+            rgb(246, 220, 117),
+            rgb(228, 197, 92)
+        ) 30; /* 使用线性渐变作为边框图像 */
+        border-radius: 0px; 
+    }
     .Tittle h1 {
-        font-size: 1.85rem;
+        font-size: 28px;
     }
     .planCloose_ph {
         display: flex;
@@ -344,7 +369,7 @@ export default {
 @media screen and (max-width: 375px) {
 
     .aboutPlan {
-        height: 200vh;
+        height: 180vh;
     }
     .leftContainer button, .rightContainer button {
         margin-top: 30px;

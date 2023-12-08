@@ -61,9 +61,12 @@
                 </div> -->
 
                 <div class="form" style="background-color: rgba(256,256,256,.5);" >
-                    <div class="form-04 form-header ">
-                    <img :src="require('@/assets/abtForm/price.png')">
-                    <p>影片報價</p>
+                    <div class="form-04 form-header form-prc">
+                        <div class="form-header">
+                            <img :src="require('@/assets/abtForm/price.png')">
+                            <p style="margin: 0;">影片報價</p>
+                        </div>
+                        <p style="margin: 0;">(不含場地及演員)</p>
                     </div>
 
                     <p class="form-04">2000元/支30s<br>3000元/支60s</p>
@@ -205,7 +208,7 @@ export default {
    justify-content: center;
 }
 .compareForm {
-   width: 80%;
+   width: 70%;
 }
 
 .compareForm_ph {
@@ -230,7 +233,7 @@ export default {
 }
 
 p {
-    /* font-weight: bold; */
+    font-weight: 500;
     font-family: 'NotoSansTC-Medium';
 }
 
@@ -248,6 +251,14 @@ p {
    justify-content: center;
    align-items: center;
 }
+
+.form-prc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .form-header img, .form-footer img {
    margin-right: 10px;
@@ -276,7 +287,7 @@ p {
 
 .highLine {
     position: relative;
-    margin: -535px 0 0 70%; 
+    margin: -535px 0 0 67%; 
     padding: 3px 15px; 
     font-weight: bold; 
     border-radius: 15px;
@@ -327,11 +338,15 @@ p {
     .highLine  {
         display: none;
     }
+    .aboutCompared h1 {
+        font-size: 28px;
+        margin: 0 0 30px;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .aboutCompared {
-        height: 100vh;
+        height: 80vh;
     }
     .highLine  {
         display: none;

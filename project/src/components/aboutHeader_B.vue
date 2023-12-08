@@ -2,7 +2,7 @@
     <div class="aboutHeader">
         <div class="aboutContent">
             <div class="left-container">
-                <h1 style="color: #7741BD;">交給我們讓你無痛生成腦中大片 !</h1>
+                <h1 style="color: #7741BD;">無痛生成腦中大片 !</h1>
                 <h1>輕鬆玩轉手中素材</h1>
                 <!-- <p>最細緻的拍攝內容——隨手擁有最吸睛的熱門短影片<br>最專業的剪輯團隊——幫你輕鬆成就每個精彩瞬間</p> -->
                 <button @click="scrollToHomeForm">了解詳情</button>
@@ -18,7 +18,7 @@
                 <img :src="require('@/assets/aboutBHeader.png')">
             </div>
             <div class="left-container">
-                <h1 style="color: #7741BD;">輕鬆玩轉手中素材<br>讓你無痛生成腦中大片 !</h1>
+                <h1 style="color: #7741BD;">無痛生成腦中大片 !</h1>
                 <h1>輕鬆玩轉手中素材</h1>
                 <!-- <p>最細緻的拍攝內容——<br>隨手擁有最吸睛的熱門短影片<br>最專業的剪輯團隊——<br>幫你輕鬆成就每個精彩瞬間</p> -->
                 <button @click="scrollToHomeForm">了解詳情</button>
@@ -113,8 +113,11 @@ export default {
 }
 
 @media screen and (max-width: 545px) {
+  .left-container h1 {
+    font-size: 26px;
+  }
   .aboutHeader {
-    height: 90vh;
+    height: 75vh;
   }
   .aboutContent {
     display: none;
@@ -124,7 +127,7 @@ export default {
     flex-direction: column;
   }
   .left-container {
-    width: 88%;
+    width: 75%;
     padding-left: 0;
   }
   .aboutContent_ph .right-container img{
@@ -136,7 +139,7 @@ export default {
 @media screen and (max-width: 375px) {
 
   .aboutHeader {
-    height: 135vh;
+    height: 95vh;
   }
 }
 </style>
