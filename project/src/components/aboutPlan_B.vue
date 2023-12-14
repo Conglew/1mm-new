@@ -5,7 +5,7 @@
             <!-- <p>描述描述描述描述描述描述描述描述描述描述描述</p> -->
         </div>
 
-        <div class="planContent">
+        <div class="planContent" style="position: relative;z-index: 1;">
             <div  data-aos="fade-right" data-aos-delay="200" class="leftContainer">
                 <div class="containerHeader">
                     <h1 class="containerTittle">純剪輯套餐</h1>
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="planCloose_ph">
+        <div class="planCloose_ph" style="position: relative;z-index: 1;">
             <div :class="['planClsBox', { 'active': 0 === activePlan }]" @click="setActivePlan(0)">
                 <h2>標準版</h2>
             </div>
@@ -83,7 +83,7 @@
             </div>
         </div>
 
-        <div class="planContent_ph">
+        <div class="planContent_ph" style="position: relative;z-index: 1;">
             <div class="leftContainer" v-if="activePlan === 0">
                 <div class="containerHeader">
                     <h1 class="containerTittle">純剪輯套餐</h1>
@@ -192,6 +192,8 @@ export default {
     margin-bottom: 50px;
 }
 .Tittle h1 {
+    position: relative;
+    z-index: 1;
     font-size: 3em;
     font-family: 'NotoSansTC-Regular';
 }

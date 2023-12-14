@@ -36,6 +36,8 @@
 }
 
 .Tittle h1{
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-size: 1.85em;
   font-family: 'NotoSansTC-Regular';

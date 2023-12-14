@@ -1,7 +1,7 @@
 <template>
     <div class="Contact">
         <h1 class="tittle">▎聯絡我們</h1>
-        <div class="contactContant contactContant_pc">
+        <div class="contactContant contactContant_pc" style="position: relative;z-index: 1;">
             <div class="leftContainer">
                 <div class="container">
                     <label for="name">您的名字</label>
@@ -52,9 +52,22 @@
                             <option value="台北">台北</option>
                             <option value="新北">新北</option>
                             <option value="基隆">基隆</option>
-                            <option value="基隆">桃園</option>
-                            <option value="基隆">新竹</option>
-                            <option value="基隆">苗栗</option>
+                            <option value="桃園">桃園</option>
+                            <option value="新竹">新竹</option>
+                            <option value="苗栗">苗栗</option>
+                            <option value="南投">南投</option>
+                            <option value="台中">台中</option>
+                            <option value="彰化">彰化</option>
+                            <option value="雲林">雲林</option>
+                            <option value="嘉義">嘉義</option>
+                            <option value="台南">台南</option>
+                            <option value="高雄">高雄</option>
+                            <option value="屏東">屏東</option>
+                            <option value="宜蘭">宜蘭</option>
+                            <option value="花蓮">花蓮</option>
+                            <option value="台東">台東</option>
+                            <option value="澎湖">澎湖</option>
+                            <option value="其他">其他</option>
                         </select>
                         <svg>
                             <polygon points="8,12 2,4 14,4 "></polygon>
@@ -64,7 +77,7 @@
             </div>
         </div>
 
-        <div class="contactContant_ph">
+        <div class="contactContant_ph" style="position: relative;z-index: 1;">
             <div class="contactContant" style="flex-direction: column; gap: 0px;display: flex;row-gap: 8px;">
                 <div class="container">
                     <label for="name">您的名字</label>
@@ -92,12 +105,22 @@
                     <div class="customSelect slcFull">
                         <select id="address" name="address" v-model="address_id" required style="background-color: #fff;font-size: 16px;">
                             <option value="" disabled selected>請選擇地址/所在區域</option>
-                            <option value="台北">台北</option>
-                            <option value="新北">新北</option>
-                            <option value="基隆">基隆</option>
-                            <option value="基隆">桃園</option>
-                            <option value="基隆">新竹</option>
-                            <option value="基隆">苗栗</option>
+                            <option value="桃園">桃園</option>
+                            <option value="新竹">新竹</option>
+                            <option value="苗栗">苗栗</option>
+                            <option value="南投">南投</option>
+                            <option value="台中">台中</option>
+                            <option value="彰化">彰化</option>
+                            <option value="雲林">雲林</option>
+                            <option value="嘉義">嘉義</option>
+                            <option value="台南">台南</option>
+                            <option value="高雄">高雄</option>
+                            <option value="屏東">屏東</option>
+                            <option value="宜蘭">宜蘭</option>
+                            <option value="花蓮">花蓮</option>
+                            <option value="台東">台東</option>
+                            <option value="澎湖">澎湖</option>
+                            <option value="其他">其他</option>
                         </select>
                         <svg>
                             <polygon points="8,12 2,4 14,4 "></polygon>
@@ -125,13 +148,13 @@
             </div>
         </div>
 
-        <div v-if="showSuccessMessage" class="successMsg">
+        <div v-if="showSuccessMessage" class="successMsg" >
             <img :src="require('@/assets/uiw_smile-o.png')">
             <p>收到您的表單囉！<br>將會有專人在1-3個工作天內聯絡您</p>
             <button @click="confirmButton">確認</button>
         </div>
 
-        <button @click="sendEmail" class="sendButton">發送</button>
+        <button @click="sendEmail" class="sendButton" style="position: relative;z-index: 1;">發送</button>
     </div>
 </template>
 
@@ -232,6 +255,8 @@ export default {
 }
 
 .tittle {
+    position: relative;
+    z-index: 1;
     padding-top: 110px;
     padding-left: 20%;
     text-align: start;
@@ -403,7 +428,7 @@ svg {
         justify-content: flex-start;
         align-items: center;
         padding-top: 50px;
-        padding-left: 10%;
+        padding-left: 5%;
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -411,7 +436,7 @@ svg {
         font-size: 18px;
         flex-direction: column;
         align-items: center;
-        padding: 0px 10%;
+        padding: 0px 5%;
         gap: 0;
     }
     .contactContant input {

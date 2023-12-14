@@ -1,7 +1,7 @@
 <template>
     <div class="aboutCompared">
        <h1>方案比較</h1>
-       <div class="container">
+       <div class="container" style="position: relative;z-index: 1;">
             <div class="compareForm">
                 <div class="form" style="background-color: rgba(256,256,256,.2);">
                     <div class="tittle">
@@ -66,7 +66,7 @@
                             <img :src="require('@/assets/abtForm/price.png')">
                             <p style="margin: 0;">影片報價</p>
                         </div>
-                        <p style="margin: 0;">(不含場地及演員)</p>
+                        <p style="margin: 0;font-size: 12px;font-family: 'NotoSansTC-Regular';">註:含稅、不含場地及演員</p>
                     </div>
 
                     <p class="form-04">2000元/支30s<br>3000元/支60s</p>
@@ -159,6 +159,9 @@
                     </div>
                 </div>
 
+                <p style="font-size: 12px; font-family: 'NotoSansTC-Regular';">註:以上價格含稅、不含場地及演員</p>
+                <button class="frmButton" @click="scrollToHomeForm">了解詳情</button>
+
             </div>
        </div>
 
@@ -199,6 +202,8 @@ export default {
    height: 100vh;
 }
 .aboutCompared h1 {
+    position: relative;
+    z-index: 1;
     font-size: 3em;
     font-family: 'NotoSansTC-Regular';
     margin-bottom: 55px;
@@ -293,6 +298,18 @@ p {
     border-radius: 15px;
     background-color: #F195BF;
     color: #fff;width: 150px;
+}
+
+.frmButton {
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1800px) {

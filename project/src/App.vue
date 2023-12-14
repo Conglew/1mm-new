@@ -192,7 +192,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    font-size: 'NotoSansTC';
+    // font-size: 'NotoSansTC';
     color: #000000;
 }
 
@@ -359,19 +359,23 @@ body {
 
 .watermark {
   position: fixed;
-  top: 125%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
   width: 100%;
   height: 100%;
+  pointer-events: none;
   z-index: 0;
 }
 .watermark img {
   width: 593.55px;
   height: 156.49px;
+  pointer-events: none;
 }
 
 .footer {
+    position: relative;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -379,6 +383,7 @@ body {
     color: #ffffff;
     padding: 40px 50px;
     width: 95%;
+    z-index: 1;
 }
 
 .footerContant {
@@ -460,10 +465,7 @@ body {
     margin-right:0;
   }
   .watermark {
-    position: fixed;
-    top: 110%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    top: 20%;
   }
   .watermark img {
     transform: scale(0.5);

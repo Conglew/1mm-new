@@ -1,7 +1,7 @@
 <template>
      <div class="aboutCompared">
         <h1>方案比較</h1>
-        <div class="container">
+        <div class="container" style="position: relative;z-index: 1;">
             <div class="compareForm">
                 <div class="form" style="background-color: rgba(256,256,256,.2);border-top-left-radius: 16px;border-top-right-radius: 16px;">
                     <div class="tittle">
@@ -66,14 +66,14 @@
                             <img :src="require('@/assets/abtForm/price.png')">
                             <p style="margin: 0;">影片報價</p>
                         </div>
-                        <p style="margin: 0;">(不含場地及演員)</p>
+                        <p style="margin: 0;font-size: 12px;font-family: 'NotoSansTC-Regular';">註:含稅、不含場地及演員</p>
                     </div>
 
-                    <p class="form-04">15,000元/支(30s-60s)</p>
+                    <p class="form-04">15,000元/支(30-60s含稅)</p>
                     
                     <div class="form-01 form-footer">
                         <img :src="require('@/assets/abtForm/like.png')">
-                        <p>30,000元/4支(30-60s)</p>
+                        <p>30,000元/4支(30-60s含稅)</p>
                     </div>
                 </div>
 
@@ -147,9 +147,10 @@
 
                 <div class="form" style="background-color: rgba(256,256,256,.2);" >
                     <div class="form-04 form-header ">
-                        <div>
+                        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 0;">
                             <img :src="require('@/assets/abtForm/price.png')">
                             <p>影片報價</p>
+                            <!-- <p style="margin: 0;">(不含場地及演員)</p> -->
                         </div>
                     </div>
 
@@ -160,6 +161,9 @@
                         <p>30,000元/<br>4支30-60s</p>
                     </div>
                 </div>
+
+                <p style="font-size: 12px; font-family: 'NotoSansTC-Regular';">註:以上價格含稅、不含場地及演員</p>
+                <button class="frmButton" @click="scrollToHomeForm">了解詳情</button>
 
             </div>
         </div>
@@ -202,6 +206,8 @@ export default {
 }
 
 .aboutCompared h1 {
+    position: relative;
+    z-index: 1;
     font-size: 3em;
     font-family: 'NotoSansTC-Regular';
     margin-bottom: 55px;
@@ -295,6 +301,18 @@ p {
     border-radius: 15px;
     background-color: #F195BF;
     color: #fff;width: 150px;
+}
+
+.frmButton {
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1800px) {

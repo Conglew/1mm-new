@@ -5,11 +5,12 @@
             <p>精準廣告曝光，以短影音向潛在用戶溝通，達到最大效益</p>
         </div>
 
-        <div class="aboutSlcContant">
+        <div class="aboutSlcContant" style="position: relative;z-index: 1;">
             <div class="aboutSlcContainer" data-aos="fade-left" data-aos-delay="150">
               <h3 class="subTittle">小試身手</h3>
+              <p style="color: #7741BD;font-size: 16px;font-family: 'NotoSansTC-Regular';">周邊5-8公里，強力曝光目標客群</p>
               <p>以 <span class="highlight">30,000/季</span> 預算達成 <span class="highlight">700,000</span> 次以上曝光引起興趣，導流轉換!</p>
-              
+
               <div class="miniTag">
                   <p> &#10003; 專屬行銷顧問</p>
                   <p> &#10003; 周報表提供</p>
@@ -19,6 +20,7 @@
 
             <div class="aboutSlcContainer" data-aos="fade-left" data-aos-delay="300">
             <h3 class="subTittle">大展拳腳</h3>
+            <p style="color: #7741BD;font-size: 16px;font-family: 'NotoSansTC-Regular';">所在城市，精準曝光目標客群，分析客戶輪廓</p>
             <p>以 <span class="highlight">100,000/季</span> 預算達成 <span class="highlight">2,400,000</span> 次以上曝光，強力曝光，增加轉換!</p>
             
             <div class="miniTag">
@@ -41,6 +43,8 @@
 }
 
 .Tittle {
+    position: relative;
+    z-index: 1;
     margin-top: 100px;
     margin-bottom: 75px;
 }

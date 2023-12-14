@@ -52,9 +52,22 @@
                             <option value="台北">台北</option>
                             <option value="新北">新北</option>
                             <option value="基隆">基隆</option>
-                            <option value="基隆">桃園</option>
-                            <option value="基隆">新竹</option>
-                            <option value="基隆">苗栗</option>
+                            <option value="桃園">桃園</option>
+                            <option value="新竹">新竹</option>
+                            <option value="苗栗">苗栗</option>
+                            <option value="南投">南投</option>
+                            <option value="台中">台中</option>
+                            <option value="彰化">彰化</option>
+                            <option value="雲林">雲林</option>
+                            <option value="嘉義">嘉義</option>
+                            <option value="台南">台南</option>
+                            <option value="高雄">高雄</option>
+                            <option value="屏東">屏東</option>
+                            <option value="宜蘭">宜蘭</option>
+                            <option value="花蓮">花蓮</option>
+                            <option value="台東">台東</option>
+                            <option value="澎湖">澎湖</option>
+                            <option value="其他">其他</option>
                         </select>
                         <svg>
                             <polygon points="8,12 2,4 14,4 "></polygon>
@@ -95,9 +108,22 @@
                         <option value="台北">台北</option>
                         <option value="新北">新北</option>
                         <option value="基隆">基隆</option>
-                        <option value="基隆">桃園</option>
-                        <option value="基隆">新竹</option>
-                        <option value="基隆">苗栗</option>
+                        <option value="桃園">桃園</option>
+                        <option value="新竹">新竹</option>
+                        <option value="苗栗">苗栗</option>
+                        <option value="南投">南投</option>
+                        <option value="台中">台中</option>
+                        <option value="彰化">彰化</option>
+                        <option value="雲林">雲林</option>
+                        <option value="嘉義">嘉義</option>
+                        <option value="台南">台南</option>
+                        <option value="高雄">高雄</option>
+                        <option value="屏東">屏東</option>
+                        <option value="宜蘭">宜蘭</option>
+                        <option value="花蓮">花蓮</option>
+                        <option value="台東">台東</option>
+                        <option value="澎湖">澎湖</option>
+                        <option value="其他">其他</option>
                     </select>
                     <svg>
                         <polygon points="8,12 2,4 14,4 "></polygon>
@@ -109,13 +135,13 @@
                 <label for="demand">您的需求</label>
                 <div class="inputConatainer">
                     <label>
-                        <input type='radio' name='editingType' value="1" v-model="needNum" checked> 純拍攝
+                        <input type='radio' name='editingType' value="4" v-model="needNum" checked> 純拍攝
                     </label>
                     <label>
-                        <input type='radio' name='editingType' value="2" v-model="needNum"> 純剪輯
+                        <input type='radio' name='editingType' value="5" v-model="needNum"> 純剪輯
                     </label>
                     <label>
-                        <input type='radio' name='editingType' value="3" v-model="needNum"> 拍攝+剪輯
+                        <input type='radio' name='editingType' value="6" v-model="needNum"> 拍攝+剪輯
                     </label>
                 </div>
                 <input type="text" id="demand" name="demand" required 
@@ -405,14 +431,14 @@ svg {
         /* display: flex;
         justify-content: center;
         align-items: center; */
-        padding-left: 10%;
+        padding-left: 5%;
         font-size: 24px;
         margin-bottom: 20px;
     }
     .contactContant {
         flex-direction: column;
         align-items: center;
-        padding: 0px 10%;
+        padding: 0px 5%;
         gap: 0;
     }
     .contactContant label {

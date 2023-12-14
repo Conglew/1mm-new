@@ -6,7 +6,7 @@
             <!-- <p>描述描述描述描述描述描述描述描述描述描述描述</p> -->
         </div>
 
-        <div class="processContent">
+        <div class="processContent" style="position: relative;z-index: 1;">
             <div class="processContainer">
                 <div data-aos="fade-down" data-aos-delay="100" class="processProject">
                     <img :src="require('@/assets/abtProcess/icon.png')">

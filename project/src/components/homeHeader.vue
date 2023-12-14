@@ -94,7 +94,7 @@ export default {
 .profolio .text-container .headerContainer {
   font-size: 32px;
   font-weight: bold;
-  font-family: 'NotoSansTC-Medium';
+  /* font-family: 'NotoSansTC-Medium'; */
   color: #000;
   margin: 5px 0;
 }
@@ -168,7 +168,7 @@ export default {
     font-size: 1.75rem;
     font-weight: bold;
     color: #000;
-    font-family: 'NotoSansTC-Light';
+    /* font-family: 'NotoSansTC-Light'; */
     margin: 0 0 20px 0;
   }
 }

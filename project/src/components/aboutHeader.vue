@@ -18,9 +18,9 @@
             </div>
 
             <div class="left-container">
-                <h1 style="color: #7741BD;">讓人屏氣凝神一分鐘的精采大片 !</h1>
-                <h1>不費力的品牌呈現<br>不著痕跡的深入人心</h1>
-                <button @click="scrollToHomeForm">了解詳情</button>
+                <h1 style="color: #7741BD;position: relative;z-index: 1;">讓人屏氣凝神一分鐘的精采大片 !</h1>
+                <h1 style="position: relative;z-index: 1">不費力的品牌呈現<br>不著痕跡的深入人心</h1>
+                <button @click="scrollToHomeForm" style="position: relative;z-index: 1">了解詳情</button>
             </div>
         </div>
     </div>

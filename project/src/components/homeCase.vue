@@ -593,6 +593,8 @@ export default{
     display: none;
 }
 .Tittle {
+    position: relative;
+    z-index: 1;
     margin-top: 5%;
     margin-bottom: 30px;
 }
