@@ -7,14 +7,14 @@
                     <div class="tittle">
                     </div>
 
-                    <div class="tittle">
-                    <h3>OMM活動套餐</h3>
-                    <p>值得暫停呼吸一分鐘欣賞的形象片</p>
+                    <div class="tittle" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">
+                        <h3>OMM活動套餐</h3>
+                        <p>值得暫停呼吸一分鐘欣賞的形象片</p>
                     </div>
 
-                    <div class="tittle">
-                    <h3>OMM經營套餐</h3>
-                    <p>回過神來決定全部交給我們的全方位套餐</p>
+                    <div class="tittle" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
+                        <h3>OMM經營套餐</h3>
+                        <p>回過神來決定全部交給我們的全方位套餐</p>
                     </div>
                 </div>
 
@@ -24,9 +24,9 @@
                         <p>影片數量</p>
                     </div>
 
-                    <p class="form-01">1</p>
+                    <p class="form-01 form-01-middle"  :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">1</p>
 
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer form-01-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>4</p>
                     </div>
@@ -38,9 +38,9 @@
                         <p>故事性</p>
                     </div>
 
-                    <p class="form-02">簡短</p>
+                    <p class="form-02"  :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">簡短</p>
 
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>完整</p>
                     </div>
@@ -52,9 +52,9 @@
                         <p>套餐取向</p>
                     </div>
 
-                    <p class="form-03">短期活動</p>
+                    <p class="form-03 form-01-middle" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">短期活動</p>
 
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer form-01-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>長期經營</p>
                     </div>
@@ -69,9 +69,9 @@
                         <p style="margin: 0;font-size: 12px;font-family: 'NotoSansTC-Regular';">註:含稅、不含場地及演員</p>
                     </div>
 
-                    <p class="form-04">15,000元/支(30-60s含稅)</p>
+                    <p class="form-04" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">15,000元/支(30-60s含稅)</p>
                     
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>30,000元/4支(30-60s含稅)</p>
                     </div>
@@ -79,11 +79,11 @@
 
                 <div class="form" style="background-color: rgba(256,256,256,.5);border-bottom-left-radius: 16px;border-bottom-right-radius: 16px;">
                     <div class="form-05 form-header "></div>
-                        <div class="form-05 form-button">
+                    <div class="form-05 form-button form-01-middle" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">
                         <button @click="scrollToHomeForm">了解更多</button>
                     </div>
                     
-                    <div class="form-05 form-button">
+                    <div class="form-05 form-button form-01-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <button @click="scrollToHomeForm">了解更多</button>
                     </div>
                 </div>
@@ -176,6 +176,8 @@
 export default {
   data() {
     return{
+        isHoverMiddle: false,
+        isHoverFooter: false,
     }
   },
   methods: {
@@ -313,6 +315,54 @@ p {
     padding: 10px 30px;
     border-radius: 15px;
     cursor: pointer;
+}
+
+/* .TittleMiddle:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(216, 195, 231, 0.2);
+} */
+.hoverMiddleClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(216, 195, 231, 0.3);
+    margin: 0;
+
+    &.tittle {
+        border-top: 5px solid rgba(216, 195, 231, 0.8);
+        height: 95%;
+    }
+    &.form-01-middle {
+        background-color: rgba(216, 195, 231, 0.1);
+    }
+}
+.tittle.hoverFooterClass,
+.form-button.hoverFooterClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hoverFooterClass {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(216, 195, 231, 0.3);
+
+    &.tittle {
+        border-top: 5px solid rgba(216, 195, 231, 0.8);
+        height: 95%;
+    }
+    &.form-01-footer {
+        background-color: rgba(216, 195, 231, 0.1);
+    }
 }
 
 @media screen and (min-width: 1800px) {

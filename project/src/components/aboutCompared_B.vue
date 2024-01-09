@@ -7,12 +7,12 @@
                     <div class="tittle">
                     </div>
 
-                    <div class="tittle">
+                    <div class="tittle" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">
                         <h3>OMM剪輯套餐</h3>
                         <p>讓你隨手紀錄的生活碎片化身為精彩片段</p>
                     </div>
 
-                    <div class="tittle">
+                    <div class="tittle" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <h3>OMM拍攝套餐</h3>
                         <p>保留人生中各個動人的回憶瞬間</p>
                     </div>
@@ -24,9 +24,9 @@
                     <p>服務內容</p>
                     </div>
 
-                    <p class="form-01">剪輯</p>
+                    <p class="form-01 form-01-middle"  :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">剪輯</p>
 
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer form-01-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>拍攝+剪輯</p>
                     </div>
@@ -38,9 +38,9 @@
                         <p>影音風格</p>
                     </div>
 
-                    <p class="form-02">依素材調整</p>
+                    <p class="form-02" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">依素材調整</p>
 
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>項目確認時溝通</p>
                     </div>
@@ -69,9 +69,9 @@
                         <p style="margin: 0;font-size: 12px;font-family: 'NotoSansTC-Regular';">註:含稅、不含場地及演員</p>
                     </div>
 
-                    <p class="form-04">2000元/支30s<br>3000元/支60s</p>
+                    <p class="form-04 form-01-middle" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">2000元/支30s<br>3000元/支60s</p>
                     
-                    <div class="form-01 form-footer">
+                    <div class="form-01 form-footer form-01-footer" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                         <img :src="require('@/assets/abtForm/like.png')">
                         <p>4000元/支30s(拍攝1hr)<br>5000元/支60s(拍攝1hr)</p>
                     </div>
@@ -79,11 +79,11 @@
 
                 <div class="form" style="background-color: rgba(256,256,256,.2);">
                     <div class="form-05 form-header "></div>
-                    <div class="form-05 form-button">
+                    <div class="form-05 form-button" :class="{ hoverMiddleClass: isHoverMiddle }" @mouseover="isHoverMiddle = true" @mouseout="isHoverMiddle = false">
                     <button @click="scrollToHomeForm">了解更多</button>
                     </div>
                     
-                    <div class="form-05 form-button">
+                    <div class="form-05 form-button" :class="{ hoverFooterClass: isHoverFooter }" @mouseover="isHoverFooter = true" @mouseout="isHoverFooter = false">
                     <button @click="scrollToHomeForm">了解更多</button>
                     </div>
                 </div>
@@ -173,6 +173,8 @@
 export default {
   data() {
     return{
+        isHoverMiddle: false,
+        isHoverFooter: false,
     }
   },
   methods: {
@@ -311,6 +313,46 @@ p {
     border-radius: 15px;
     cursor: pointer;
 }
+
+.hoverMiddleClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(216, 195, 231, 0.3);
+    margin: 0;
+
+    &.tittle {
+        border-top: 5px solid rgba(216, 195, 231, 0.8);
+        height: 95%;
+    }
+    &.form-01-middle {
+        background-color: rgba(216, 195, 231, 0.1);
+    }
+}
+.tittle.hoverFooterClass,
+.form-button.hoverFooterClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hoverFooterClass {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(216, 195, 231, 0.3);
+
+    &.tittle {
+        border-top: 5px solid rgba(216, 195, 231, 0.8);
+        height: 95%;
+    }
+    &.form-01-footer {
+        background-color: rgba(216, 195, 231, 0.1);
+    }
+}
+
 
 @media screen and (min-width: 1800px) {
     h1{
