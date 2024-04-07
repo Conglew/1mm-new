@@ -8,7 +8,9 @@
 
           <div  data-aos="fade-up" data-aos-duration="750" class="text-container">
               <h2>1 Minute Magic</h2>
-              <p class="headerContainer">短影音製作專家 <br>創意滿點、速遞成稿<br>為短影音注入生命</p>
+              <!-- <p class="headerContainer">短影音製作專家 <br>創意滿點、速遞成稿<br>為短影音注入生命</p> -->
+              <p class="headerContainer" style="font-size: 36px;letter-spacing: 5.5%;">你出價 我來拍</p>
+              <p class="headerContainer" style="font-size: 32px;letter-spacing: 2%;">不受預算約束的<br>高規格短影音製作</p>
               <p class="headerTag">#reels&emsp;#shorts&emsp;#tiktok&emsp;#直式影音</p>
               <button @click="scrollToHomeForm">了解詳情</button>
               <button @click="scrollToHomeForm">聯絡我們</button>

@@ -6,7 +6,7 @@
                 <div class="container">
                     <label for="name">您的名字</label>
                     <input type="text" id="name" name="name" required
-                        v-model="from_name"
+                        v-model="from_company"
                         placeholder="請輸入您的中/英文姓名">
                 </div>
 
@@ -17,7 +17,7 @@
                         placeholder="請輸入您的電話">
                 </div>
 
-                <div class="container">
+                <!-- <div class="container">
                     <label for="demand">您的需求</label>
                     <div class="inputConatainer">
                         <label>
@@ -33,16 +33,22 @@
                     <input type="text" id="demand" name="demand" required 
                         v-model="message"
                         placeholder="請輸入">
-                </div>
-            </div>
-
-            <div class="rightContainer">
+                </div> -->
                 <div class="container">
                     <label for="email">電子郵件</label>
                     <input type="email" id="email" name="email" required 
                         v-model="email_id"
                         placeholder="請輸入您的電子郵件">
                 </div>
+            </div>
+
+            <div class="rightContainer">
+                <!-- <div class="container">
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" name="email" required 
+                        v-model="email_id"
+                        placeholder="請輸入您的電子郵件">
+                </div> -->
 
                 <div class="container">
                     <label for="address">地址</label>
@@ -74,6 +80,31 @@
                         </svg>
                     </div>
                 </div>
+
+                <div class="container">
+                    <label for="budget">您的預算</label>
+                    <input type="budget" id="budget" name="budget" required 
+                        v-model="budget_id"
+                        placeholder="請輸入您的預算">
+                </div>
+
+                <div class="container">
+                    <label for="demand">您的需求</label>
+                    <div class="inputConatainer" v-if="this.$route.path !== '/aboutA'">
+                        <label>
+                            <input type='radio' name='editingType' value="1" v-model="needNum" checked> 純拍攝
+                        </label>
+                        <label>
+                            <input type='radio' name='editingType' value="2" v-model="needNum"> 純剪輯
+                        </label>
+                        <label>
+                            <input type='radio' name='editingType' value="3" v-model="needNum"> 拍攝+剪輯
+                        </label>
+                    </div>
+                    <input type="text" id="demand" name="demand" required 
+                        v-model="message"
+                        placeholder="請輸入">
+                </div>
             </div>
         </div>
 
@@ -82,7 +113,7 @@
                 <div class="container">
                     <label for="name">您的名字</label>
                     <input type="text" id="name" name="name" required
-                        v-model="from_name"
+                        v-model="from_company"
                         placeholder="請輸入您的中/英文姓名">
                 </div>
 
@@ -129,8 +160,15 @@
                 </div>
 
                 <div class="container">
+                    <label for="budget">您的預算</label>
+                    <input type="budget" id="budget" name="budget" required 
+                        v-model="budget_id"
+                        placeholder="請輸入您的預算">
+                </div>
+
+                <div class="container">
                     <label for="demand">您的需求</label>
-                    <div class="inputConatainer">
+                    <div class="inputConatainer" v-if="this.$route.path !== '/aboutA'">
                         <label>
                             <input type='radio' name='editingType' value="4" v-model="needNum"> 純拍攝
                         </label>
@@ -165,8 +203,10 @@ export default {
   data() {
     return {
         showSuccessMessage: false,
-        from_name: '',
+        from_name: '1MM官網',
+        from_company: '',
         email_id: '',
+        budget_id: '',
         phone_id: '',
         address_id: '',
         needNum: 1,
@@ -175,11 +215,18 @@ export default {
     };
   },
   mounted() {
+    const currentRoute = this.$route.path;
+    if (currentRoute === '/aboutA') {
+        this.needText = '拍攝+剪輯';
+        console.log(this.needText);
+    }
   },
   methods: {
     sendEmail() {
       const templateParams = {
         from_name : this.from_name,
+        from_company : this.from_company,
+        budget_id : this.budget_id,
         email_id : this.email_id,
         phone_id : this.phone_id,
         address_id : this.address_id,
@@ -187,7 +234,7 @@ export default {
         message : this.message,
       };
 
-      if( this.from_name == '' || this.email_id == '' || this.phone_id == '' || this.address_id == '' || this.message == '') {
+      if( this.from_company == '' || this.email_id == '' || this.phone_id == '' || this.address_id == '' || this.message == '' || this.budget_id == '') {
         alert('發送失敗: 請填寫完整資料～');
         return;
       }
@@ -198,7 +245,9 @@ export default {
             // alert('發送成功。');
             this.showSuccessMessage = true;
 
-            this.from_name = '';
+            // this.from_name = '';
+            this.from_company = '';
+            this.budget_id = '';
             this.email_id = '';
             this.phone_id = '';
             this.address_id = '';
@@ -215,22 +264,28 @@ export default {
   },
   computed: {
     getNeedText() {
-      switch (parseInt(this.needNum)) {
-        case 1:
-          return '純拍攝';
-        case 2:
-          return '純剪輯';
-        case 3:
-          return '拍攝+剪輯';
-        case 4:
-          return '純拍攝';
-        case 5:
-          return '純剪輯';
-        case 6:
-          return '拍攝+剪輯';
-        default:
-          return '';
-      }
+        const currentRoute = this.$route.path;
+        if (currentRoute === '/aboutA') {
+            return '拍攝+剪輯';
+        } else {
+            // 根據 this.needNum 返回對應的文本
+            switch (parseInt(this.needNum)) {
+                case 1:
+                    return '純拍攝';
+                case 2:
+                    return '純剪輯';
+                case 3:
+                    return '拍攝+剪輯';
+                case 4:
+                    return '純拍攝';
+                case 5:
+                    return '純剪輯';
+                case 6:
+                    return '拍攝+剪輯';
+                default:
+                    return '';
+            }
+        }
     },
   },
   watch: {
@@ -268,7 +323,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 0px 20%;
-    gap: 150px;
+    gap: 125px;
 }
 
 .leftContainer,.rightContainer ,.container {
@@ -294,6 +349,7 @@ export default {
 }
 .customSelect {
   position: relative;
+  margin-bottom: 20px;
 }
 select {
     appearance: none;
@@ -470,6 +526,7 @@ svg {
     }
     .customSelect {
         width: 100%;
+        margin-bottom: 0;
     }
     select {
         width: 100%;
@@ -478,7 +535,7 @@ svg {
 
 @media screen and (max-width: 375px) {
     .Contact {
-        height: 145vh;
+        height: 155vh;
     }
 }
 </style>

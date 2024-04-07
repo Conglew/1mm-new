@@ -2,7 +2,7 @@
     <div class="aboutHeader">
         <div class="aboutContent">
             <div class="left-container">
-                <h1 style="color: #7741BD;">無痛生成腦中大片 !</h1>
+                <h1 style="color: #7741BD;">交給我們讓你無痛生成腦中大片 !</h1>
                 <h1>輕鬆玩轉手中素材</h1>
                 <!-- <p>最細緻的拍攝內容——隨手擁有最吸睛的熱門短影片<br>最專業的剪輯團隊——幫你輕鬆成就每個精彩瞬間</p> -->
                 <button @click="scrollToHomeForm">了解詳情</button>

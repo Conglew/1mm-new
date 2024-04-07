@@ -2,8 +2,9 @@
   <div class="about">
     <aboutHeader></aboutHeader>
     <abooutPlan></abooutPlan>
-    <aboutCompared></aboutCompared>
-    <aboutSlc></aboutSlc>
+    <aboutCustom></aboutCustom>
+    <!-- <aboutCompared></aboutCompared> -->
+    <!-- <aboutSlc></aboutSlc> -->
     <aboutProcess></aboutProcess>
     <ContactForm id="contactForm"></ContactForm>
   </div>
@@ -12,8 +13,9 @@
 <script>
 import aboutHeader from '@/components/aboutHeader.vue';
 import abooutPlan from '@/components/aboutPlan.vue';
-import aboutCompared from '@/components/aboutCompared.vue';
-import aboutSlc from '@/components/aboutAddSlc.vue'
+import aboutCustom from '@/components/aboutCustom.vue'
+// import aboutCompared from '@/components/aboutCompared.vue';
+// import aboutSlc from '@/components/aboutAddSlc.vue'
 import aboutProcess from '@/components/aboutProcess.vue';
 import ContactForm from '@/components/contactForm.vue';
 
@@ -26,8 +28,9 @@ export default{
   components: {
     aboutHeader,
     abooutPlan,
-    aboutCompared,
-    aboutSlc,
+    aboutCustom,
+    // aboutCompared,
+    // aboutSlc,
     aboutProcess,
     ContactForm,
   },
