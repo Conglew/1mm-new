@@ -1,7 +1,10 @@
 .DS_Store
 node_modules
 /dist
-
+/build
+# 或者寫成
+# dist/
+# build/
 
 # local env files
 .env.local
