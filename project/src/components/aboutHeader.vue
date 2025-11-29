@@ -8,13 +8,13 @@
             </div>
 
             <div data-aos="fade-left" data-aos-duration="1000" class="right-container">
-                <img :src="require('@/assets/aboutAHeader.png')">
+                <img :src="require('@/assets/aboutAHeader.png')" loading="lazy">
             </div>
         </div>
 
         <div class="aboutContent_ph">
             <div data-aos="fade-left" data-aos-duration="1000" class="right-container">
-                <img :src="require('@/assets/aboutAHeader.png')">
+                <img :src="require('@/assets/aboutAHeader.png')" loading="lazy">
             </div>
 
             <div class="left-container">

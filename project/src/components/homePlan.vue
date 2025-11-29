@@ -4,7 +4,7 @@
         <div class="planContant">
             <router-link to="/aboutA" class="planContainer">
                 <div class="imgContainer">
-                  <img :src="require('@/assets/Gif/A.gif')" alt="GIF">
+                  <img :src="require('@/assets/Gif/A.gif')" alt="GIF" loading="lazy">
                 </div>
                 
                 <h3>公司短影音需求</h3>
@@ -12,7 +12,7 @@
 
             <router-link to="/aboutB" class="planContainer">
                 <div class="imgContainer">
-                  <img :src="require('@/assets/Gif/B.gif')" alt="GIF">
+                  <img :src="require('@/assets/Gif/B.gif')" alt="GIF" loading="lazy">
                 </div>
               
                 <h3>個人短影音服務方案</h3>

@@ -5,7 +5,7 @@
         <div class="Managecontainer">
             <div class="manageContant-1">
                 <div class="img-container">
-                    <img :src="require('@/assets/Manage/mng01.png')">
+                    <img :src="require('@/assets/Manage/mng01.png')" loading="lazy">
                 </div>
 
                 <div data-aos="fade-left" class="text-container">
@@ -25,13 +25,13 @@
                 </div>
 
                 <div class="img-container">
-                    <img :src="require('@/assets/Manage/mng02.png')">
+                    <img :src="require('@/assets/Manage/mng02.png')" loading="lazy">
                 </div>
             </div>
 
             <div class="manageContant-2 manageContant-2-02">
                 <div class="img-container">
-                    <img :src="require('@/assets/Manage/mng02.png')">
+                    <img :src="require('@/assets/Manage/mng02.png')" loading="lazy">
                 </div>
 
                 <div class="text-container">

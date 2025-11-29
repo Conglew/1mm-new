@@ -43,7 +43,7 @@
 
                 <button @click="scrollToHomeForm">立即聯繫</button> -->
                 <div class="containerImg">
-                    <img :src="require('@/assets/about_A.png')">
+                    <img :src="require('@/assets/about_A.png')" loading="lazy">
                 </div>
             </div>
 
@@ -59,30 +59,36 @@
                     <div class="conceptContainer">
                         <div class="cancept">
                             <div class="canceptContainer">
-                                <h3>概念呈現</h3>
-                                <p>品牌故事</p>
-                                <p>產品/服務介紹</p>
-                                <p>促銷活動</p>
-                                <p>使用者體驗回饋</p>
+                                <div>
+                                    <h3>概念呈現</h3>
+                                    <p>品牌故事</p>
+                                    <p>產品/服務介紹</p>
+                                    <p>促銷活動</p>
+                                    <p>使用者體驗回饋</p>
+                                </div>
                             </div>
                         </div>
                         <div class="cancept">
                             <div class="canceptContainer">
-                                <h3>細緻服務</h3>
-                                <p>現場指導</p>
-                                <p>精彩剪輯</p>
-                                <p>專業運鏡</p>
-                                <p>形象營造</p>
-                                <p>投放需求</p>
+                                <div>
+                                    <h3>細緻服務</h3>
+                                    <p>現場指導</p>
+                                    <p>精彩剪輯</p>
+                                    <p>專業運鏡</p>
+                                    <p>形象營造</p>
+                                    <p>投放需求</p>
+                                </div>
                             </div>
                         </div>
                         <div class="cancept">
                             <div class="canceptContainer">
-                                <h3>專業評估</h3>
-                                <p>拍攝風格建議</p>
-                                <p>完整細節溝通</p>
-                                <p>專業燈光設計</p>
-                                <p>專屬腳本設計</p>
+                                <div>
+                                    <h3>專業評估</h3>
+                                    <p>拍攝風格建議</p>
+                                    <p>完整細節溝通</p>
+                                    <p>專業燈光設計</p>
+                                    <p>專屬腳本設計</p>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="cancept"></div> -->
@@ -182,7 +188,7 @@
                 <button @click="scrollToHomeForm">立即聯繫</button>
             </div> -->
             <div class="containerImg">
-                <img :src="require('@/assets/about_A.png')">
+                <img :src="require('@/assets/about_A.png')" loading="lazy">
             </div>
             <div class="containerHeader">
                 <h3>您出價 我來拍</h3>
@@ -423,8 +429,9 @@ export default {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px 0;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 10px 0px;
 
     & .cancept {
         width: calc(50% - 10px);
@@ -461,6 +468,15 @@ export default {
                 margin-right: 10px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .aboutPlan {
+        height: 75vh;
+    }
+    .canceptContainer {
+        align-items: center;
     }
 }
 
@@ -533,6 +549,9 @@ export default {
     }
     .containerMain {
         padding: 0px 20px;
+    }
+    .canceptContainer {
+        justify-content: space-between;
     }
     .cancept h3{
         margin: 0 0px 10px;

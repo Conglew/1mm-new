@@ -9,31 +9,31 @@
         <div class="processContent" style="position: relative;z-index: 1;">
             <div class="processContainer">
                 <div data-aos="fade-down" data-aos-delay="100" class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon.png')">
+                    <img :src="require('@/assets/abtProcess/icon.png')" loading="lazy">
                     <h2>項目確認</h2>
                     <p>專業視角了解客戶需求， 提供後續拍攝建議。</p>
                 </div>
 
                 <div data-aos="fade-down" data-aos-delay="900" class="processProject" style="transform: translateY(200px);">
-                    <img :src="require('@/assets/abtProcess/icon-2.png')">
+                    <img :src="require('@/assets/abtProcess/icon-2.png')" loading="lazy">
                     <h2>排程確認</h2>
                     <p>確認拍攝日期並收取50%訂金。</p>
                 </div>
 
                 <div data-aos="fade-down" data-aos-delay="300" class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-4.png')">
+                    <img :src="require('@/assets/abtProcess/icon-4.png')" loading="lazy">
                     <h2>專業拍攝</h2>
                     <p>根據客戶需求，提供技術面上的專業服務。</p>
                 </div>
 
                 <div data-aos="fade-down" data-aos-delay="1200" class="processProject" style="transform: translateY(200px);">
-                    <img :src="require('@/assets/abtProcess/icon-6.png')">
+                    <img :src="require('@/assets/abtProcess/icon-6.png')" loading="lazy">
                     <h2>細緻剪輯</h2>
                     <p>透過鏡頭敘事，精準編排影像節奏，讓概念精彩呈現。</p>
                 </div>
 
                 <div data-aos="fade-down" data-aos-delay="600" class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-7.png')">
+                    <img :src="require('@/assets/abtProcess/icon-7.png')" loading="lazy">
                     <h2>成片交付</h2>
                     <p>透過精緻剪輯，使作品產生獨特風格，並交付完整成片檔案，並收取50%尾款。</p>
                 </div>
@@ -41,7 +41,7 @@
 
             <div class="processContainer_ph">
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon.png')">
+                    <img :src="require('@/assets/abtProcess/icon.png')" loading="lazy">
                     <div>
                         <h2>項目確認</h2>
                         <p>專業視角了解客戶需求， 提供後續拍攝建議。</p>
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-2.png')">
+                    <img :src="require('@/assets/abtProcess/icon-2.png')" loading="lazy">
                     <div>
                         <h2>排程確認</h2>
                         <p>確認拍攝日期並收取50%訂金。</p>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-4.png')">
+                    <img :src="require('@/assets/abtProcess/icon-4.png')" loading="lazy">
                     <div>
                         <h2>專業拍攝</h2>
                         <p>根據客戶需求，提供技術面上的專業服務。</p>
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-6.png')">
+                    <img :src="require('@/assets/abtProcess/icon-6.png')" loading="lazy">
                     <div>
                         <h2>細緻剪輯</h2>
                         <p>透過鏡頭敘事，精準編排影像節奏，讓概念精彩呈現。</p>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-7.png')">
+                    <img :src="require('@/assets/abtProcess/icon-7.png')" loading="lazy">
                     <div>
                         <h2>成片交付</h2>
                         <p>透過精緻剪輯，使作品產生獨特風格，並交付完整成片檔案，並收取50%尾款。</p>

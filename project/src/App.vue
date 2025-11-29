@@ -11,19 +11,19 @@
       </div>
 
       <div class="nav-HamBG" @click="toggleNavHamBar">
-        <img :src="require('@/assets/hamburger.png')">
+        <img :src="require('@/assets/hamburger.png')" loading="lazy">
       </div>
     </header>
 
     <div class="navBar">
       <div class="phone" @click="callPhoneNumber">
-        <img :src="require('@/assets/navBar/sideCTA.png')">
+        <img :src="require('@/assets/navBar/sideCTA.png')" loading="lazy">
       </div>
       <div class="form" @click="scrollToHomeForm">
-        <img :src="require('@/assets/navBar/sideCTA-2.png')">
+        <img :src="require('@/assets/navBar/sideCTA-2.png')" loading="lazy">
       </div>
       <div class="Line" @click="openLine">
-        <img :src="require('@/assets/navBar/sideCTA-3.png')">
+        <img :src="require('@/assets/navBar/sideCTA-3.png')" loading="lazy">
       </div>
     </div>
 
@@ -38,15 +38,17 @@
         <router-link to="/contact" @click="closeNavHamBar" class="hamBarTittle">聯絡我們</router-link>
       </div>
 
-      <img class="hamBar-logo" :src="require('@/assets/Logo.png')">
-      <img @click="toggleNavHamBar" class="hamBar-close" :src="require('@/assets/closeIcon.png')">
+      <img class="hamBar-logo" :src="require('@/assets/Logo.png')" loading="lazy">
+      <img @click="toggleNavHamBar" class="hamBar-close" :src="require('@/assets/closeIcon.png')" loading="lazy">
     </div>
     
     <div class="watermark">
-      <img :src="require('@/assets/watermark.png')">
+      <img :src="require('@/assets/watermark.png')" loading="lazy">
     </div>
 
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
     <footer class="footer">
       <div class="footerContant">
         <h3 class="tittle">關於我們</h3>

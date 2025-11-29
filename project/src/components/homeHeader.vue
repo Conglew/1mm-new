@@ -3,7 +3,7 @@
         <div class="profolio-sky"></div>
         <div class="profolio">
           <div class="image-container">
-              <img :src="require('@/assets/ppl.png')">
+              <img :src="require('@/assets/ppl.png')" loading="lazy">
           </div>
 
           <div  data-aos="fade-up" data-aos-duration="750" class="text-container">

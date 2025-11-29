@@ -9,37 +9,41 @@ const routes = [
   {
     path: '/home',
     name: 'home',
+    component: () => import('../views/HomeView.vue'),
     meta: {
-      title: 'Home OMM'
-    },
-    // component: HomeView
-    component: () => import('../views/HomeView.vue')
+      title: 'Home OMM',
+      keepAlive: true
+    }
   },
   {
     path: '/aboutA',
     name: 'aboutA',
+    component: () => import('../views/AboutAView.vue'),
     meta: {
-      title: 'Compang Project'
-    },
-    component: () => import('../views/AboutAView.vue')
+      title: 'Compang Project',
+      keepAlive: true
+    }
   },
   {
     path: '/aboutB',
     name: 'aboutB',
+    component: () => import('../views/AboutBView.vue'),
     meta: {
-      title: 'Person Project'
-    },
-    component: () => import('../views/AboutBView.vue')
+      title: 'Person Project',
+      keepAlive: true
+    }
   },
   {
     path: '/contact',
     name: 'contact',
+    component: () => import( '../views/ContactView.vue'),
     meta: {
-      title: 'Contact OMM'
-    },
-    component: () => import( '../views/ContactView.vue')
+      title: 'Contact OMM',
+      keepAlive: true
+    }
   }
-]
+];
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

@@ -15,7 +15,7 @@
                     <div class="blog"><h3>攝影執行</h3></div>
                 </div>
                 <div class="textContainer">
-                    <img :src="isMobile ? require('@/assets/aboutCunstomBorder_ph.png') : require('@/assets/aboutCunstomBorder.png')" alt="Custom Border">
+                    <img :src="isMobile ? require('@/assets/aboutCunstomBorder_ph.png') : require('@/assets/aboutCunstomBorder.png')" alt="Custom Border" loading="lazy">
                     <button @click="scrollToHomeForm">立即聯繫</button>
                 </div>
             </div>
@@ -133,6 +133,16 @@ export default {
     }
 }
 
+@media screen and (max-width: 1920px) {
+    .aboutCustom {
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .aboutCustom {
+        height: 150vh;
+    }
+}
 @media screen and (max-width: 545px) {
     .aboutCustom {
         height: 125vh;

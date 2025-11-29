@@ -9,31 +9,31 @@
         <div class="processContent" style="position: relative;z-index: 1;">
             <div class="processContainer">
                 <div data-aos="fade-down" data-aos-delay="100" class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon.png')">
+                    <img :src="require('@/assets/abtProcess/icon.png')" loading="lazy">
                     <h2>前期溝通</h2>
                     <p>專業視角深入了解品牌方需求，確認拍攝方向，量身打造專屬影片風格。收取50%訂金進行後續流程。</p>
                 </div>
 
-                <div data-aos="fade-down"  data-aos-delay="900" class="processProject" style="transform: translateY(200px);">
+                <div data-aos="fade-down"  data-aos-delay="900" class="processProject" style="transform: translateY(200px);" loading="lazy">
                     <img :src="require('@/assets/abtProcess/icon-2.png')">
                     <h2>場地勘驗</h2>
                     <p>將現場狀況作實際評估，使整體拍攝過程更流暢有效。</p>
                 </div>
 
                 <div data-aos="fade-down"  data-aos-delay="300" class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-3.png')">
+                    <img :src="require('@/assets/abtProcess/icon-3.png')" loading="lazy">
                     <h2>腳本撰寫</h2>
                     <p>撰寫初稿後，與品牌方進行深入溝通，並確認正式拍攝時間，使細節也能被完整視現。</p>
                 </div>
 
                 <div data-aos="fade-down" data-aos-delay="1200" class="processProject" style="transform: translateY(200px);">
-                    <img :src="require('@/assets/abtProcess/icon-4.png')">
+                    <img :src="require('@/assets/abtProcess/icon-4.png')" loading="lazy">
                     <h2>正式拍攝</h2>
                     <p>專業團隊拍攝，透過鏡頭敘述故事，勾勒品牌形象，呈現豐富畫面。</p>
                 </div>
 
                 <div data-aos="fade-down"  data-aos-delay="600" class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-5.png')">
+                    <img :src="require('@/assets/abtProcess/icon-5.png')" loading="lazy">
                     <h2>成片交付</h2>
                     <p>透過精緻剪輯，使作品產生獨特風格，並交付完整成片檔案，並收取50%尾款。</p>
                 </div>
@@ -41,7 +41,7 @@
 
             <div class="processContainer_ph">
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon.png')">
+                    <img :src="require('@/assets/abtProcess/icon.png')" loading="lazy">
                     <div>
                         <h2>前期溝通</h2>
                         <p>專業視角深入了解品牌方需求，確認拍攝方向，量身打造專屬影片風格。收取50%訂金進行後續流程。</p>
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-2.png')">
+                    <img :src="require('@/assets/abtProcess/icon-2.png')" loading="lazy">
                     <div>
                         <h2>場地勘驗</h2>
                         <p>將現場狀況作實際評估，使整體拍攝過程更流暢有效。</p>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-3.png')">
+                    <img :src="require('@/assets/abtProcess/icon-3.png')" loading="lazy">
                     <div>
                         <h2>腳本撰寫</h2>
                         <p>撰寫初稿後，與品牌方進行深入溝通，並確認正式拍攝時間，使細節也能被完整視現。</p>
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-4.png')">
+                    <img :src="require('@/assets/abtProcess/icon-4.png')" loading="lazy">
                     <div>
                         <h2>正式拍攝</h2>
                         <p>專業團隊拍攝，透過鏡頭敘述故事，勾勒品牌形象，呈現豐富畫面。</p>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="processProject">
-                    <img :src="require('@/assets/abtProcess/icon-5.png')">
+                    <img :src="require('@/assets/abtProcess/icon-5.png')" loading="lazy">
                     <div>
                         <h2>成片交付</h2>
                         <p>透過精緻剪輯，使作品產生獨特風格，並交付完整成片檔案，並收取50%尾款。</p>

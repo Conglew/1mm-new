@@ -37,7 +37,7 @@
 
                 <button @click="scrollToHomeForm">立即聯繫</button> -->
                 <div class="containerImg">
-                    <img :src="require('@/assets/about_B.png')">
+                    <img :src="require('@/assets/about_B.png')" loading="lazy">
                 </div>
             </div>
 
@@ -53,19 +53,23 @@
                     <div class="conceptContainer">
                         <div class="cancept">
                             <div class="canceptContainer">
-                                <h3>專業服務</h3>
-                                <p> &#10003; 服務項目溝通</p>
-                                <p> &#10003; 呈現風格規劃</p>
-                                <p> &#10003; 拍攝手法擬定</p>
-                                <p> &#10003; 客製剪輯需求</p>
+                                <div>
+                                    <h3>專業服務</h3>
+                                    <p> 服務項目溝通</p>
+                                    <p> 呈現風格規劃</p>
+                                    <p> 拍攝手法擬定</p>
+                                    <p> 客製剪輯需求</p>
+                                </div>
                             </div>
                         </div>
                         <div class="cancept">
                             <div class="canceptContainer">
-                                <h3>細緻呈現</h3>
-                                <p> &#10003; 個人形象呈現</p>
-                                <p> &#10003; 短影音專業製作</p>
-                                <p> &#10003; 特殊需求洽談</p>
+                                <div>
+                                    <h3>細緻呈現</h3>
+                                    <p> 個人形象呈現</p>
+                                    <p> 短影音專業製作</p>
+                                    <p> 特殊需求洽談</p>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="cancept">
@@ -152,7 +156,7 @@
                 <button @click="scrollToHomeForm" style="transform: translateY(-30px);">立即聯繫</button>
             </div> -->
             <div class="containerImg">
-                <img :src="require('@/assets/about_B.png')">
+                <img :src="require('@/assets/about_B.png')" loading="lazy">
             </div>
             <div class="containerHeader">
                 <h3>您出價 我來拍</h3>
@@ -255,7 +259,7 @@ export default {
 }
 
 .rightContainer {
-    width: 35%;
+    width: 25%;
     height: 100%;
     /* height: 955px; */
     /* background-color: rgba(255,255,255,0.7); */
@@ -340,9 +344,16 @@ export default {
     margin: 0 13px 2.5px;
     letter-spacing: 5.5%;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'NotoSansTC-Light';
     /* letter-spacing: 5.5%; */
+}
+.planContent .cancept p::before {
+    content: "\2713";
+    font-size: 17px;
+    font-weight: bold;
+    color: #D8C3E7;
+    margin-right: 10px;
 }
 
 .leftContainer button, .rightContainer button {
@@ -373,8 +384,9 @@ export default {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px 0;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 10px 0px;
 
     & .cancept {
         width: calc(50% - 10px);
@@ -401,7 +413,6 @@ export default {
             & p {
                 font-size: 15px;
                 font-family: 'NotoSansTC-Light';
-                /* color: purple; */
             }
             & p::before {
                 content: "\2713";
@@ -414,6 +425,14 @@ export default {
     }
 }
 
+@media screen and (min-width: 1920px) {
+    .aboutPlan {
+        height: 75vh;
+    }
+    .canceptContainer {
+        align-items: center;
+    }
+}
 @media screen and (min-width: 1800px) {
     .Tittle h1 {
         font-size: 3rem;
@@ -483,6 +502,9 @@ export default {
     }
     .containerMain {
         padding: 0px 20px;
+    }
+    .canceptContainer {
+        justify-content: space-between;
     }
     .cancept h3{
         margin: 0 0px 10px;

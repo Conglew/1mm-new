@@ -9,13 +9,13 @@
             </div>
 
             <div data-aos="fade-left" data-aos-duration="1000" class="right-container">
-                <img :src="require('@/assets/aboutBHeader.png')">
+                <img :src="require('@/assets/aboutBHeader.png')" loading="lazy">
             </div>
         </div>
 
         <div class="aboutContent_ph">
             <div data-aos="fade-left" data-aos-duration="1000" class="right-container">
-                <img :src="require('@/assets/aboutBHeader.png')">
+                <img :src="require('@/assets/aboutBHeader.png')" loading="lazy">
             </div>
             <div class="left-container">
                 <h1 style="color: #7741BD;position: relative;z-index: 1">無痛生成腦中大片 !</h1>

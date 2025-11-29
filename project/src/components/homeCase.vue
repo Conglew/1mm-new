@@ -13,7 +13,7 @@
                         <!-- <video v-show="!showCover01" ref="videoRef1" class="videoContent" @ended="showCover01 = true" >
                             <source :src="require('@/assets/video/空白15s版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/uKvj5LYPs3Y?si=LxUraNyMLfgzowfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/uKvj5LYPs3Y?si=LxUraNyMLfgzowfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -27,7 +27,7 @@
                         <!-- <video v-show="!showCover02" ref="videoRef2" class="videoContent" @ended="showCover02 = true" >
                             <source :src="require('@/assets/video/SWC手工皮件.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/YIXCpkvY04I?si=6K8gOs5ZmK1VniTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/YIXCpkvY04I?si=6K8gOs5ZmK1VniTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -41,7 +41,7 @@
                         <!-- <video v-show="!showCover03" ref="videoRef3" class="videoContent" @ended="showCover03 = true" >
                             <source :src="require('@/assets/video/空白情節版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/zXnU06ya5cU?si=N6ZnX7yfibGAncFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/zXnU06ya5cU?si=N6ZnX7yfibGAncFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -55,7 +55,7 @@
                         <!-- <video v-show="!showCover04" ref="videoRef4" class="videoContent" @ended="showCover04 = true" >
                             <source :src="require('@/assets/video/OMM-渣男炸物 完整版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/PXbI5g-NjEY?si=1HKpGGIxRoabk6Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/PXbI5g-NjEY?si=1HKpGGIxRoabk6Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -71,7 +71,7 @@
                         <video v-show="!showCover05" ref="videoRef5" class="videoContent" @ended="showCover05 = true" >
                             <source :src="require('@/assets/video/OMM-幹話美甲 完整版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/Gt1ilni2jaw?si=h9yTEMZ2ov6y2fem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/Gt1ilni2jaw?si=h9yTEMZ2ov6y2fem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -85,7 +85,7 @@
                         <video v-show="!showCover06" ref="videoRef6" class="videoContent" @ended="showCover06 = true" >
                             <source :src="require('@/assets/video/OMM-Chill pizza 完整版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/VblbvcUQVWM?si=iiCn4TCuaisKQJEC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/VblbvcUQVWM?si=iiCn4TCuaisKQJEC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -99,7 +99,7 @@
                         <video v-show="!showCover07" ref="videoRef7" class="videoContent" @ended="showCover07 = true" >
                             <source :src="require('@/assets/video/OMM-地方茶院 完整版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/XuI7j7fRy54?si=FYwgBNxsUnA8mt-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/XuI7j7fRy54?si=FYwgBNxsUnA8mt-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -113,7 +113,7 @@
                         <video v-show="!showCover08" ref="videoRef8" class="videoContent" @ended="showCover08 = true" >
                             <source :src="require('@/assets/video/OMM-KK cafe 完整版.mp4')" type="video/mp4">
                         </video> -->
-                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/eUc5-46Nn-M?si=UM9Guj7NZZCZy7S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/eUc5-46Nn-M?si=UM9Guj7NZZCZy7S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <!-- <div class="imgContent">
                         <h2>短影音</h2>
@@ -150,7 +150,7 @@
                     <video v-show="!showCover01" ref="videoRef09" class="videoContent" @ended="showCover01 = true" >
                         <source :src="require('@/assets/video/空白15s版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/uKvj5LYPs3Y?si=LxUraNyMLfgzowfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/uKvj5LYPs3Y?si=LxUraNyMLfgzowfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -164,7 +164,7 @@
                     <video v-show="!showCover02" ref="videoRef10" class="videoContent" @ended="showCover02 = true" >
                         <source :src="require('@/assets/video/SWC手工皮件.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/YIXCpkvY04I?si=6K8gOs5ZmK1VniTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/YIXCpkvY04I?si=6K8gOs5ZmK1VniTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -178,7 +178,7 @@
                     <video v-show="!showCover03" ref="videoRef11" class="videoContent" @ended="showCover03 = true" >
                         <source :src="require('@/assets/video/空白情節版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/zXnU06ya5cU?si=N6ZnX7yfibGAncFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/zXnU06ya5cU?si=N6ZnX7yfibGAncFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -192,7 +192,7 @@
                     <video v-show="!showCover04" ref="videoRef12" class="videoContent" @ended="showCover04 = true" >
                         <source :src="require('@/assets/video/OMM-渣男炸物 完整版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/PXbI5g-NjEY?si=1HKpGGIxRoabk6Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/PXbI5g-NjEY?si=1HKpGGIxRoabk6Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -206,7 +206,7 @@
                     <video v-show="!showCover05" ref="videoRef13" class="videoContent" @ended="showCover05 = true" >
                         <source :src="require('@/assets/video/OMM-幹話美甲 完整版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/Gt1ilni2jaw?si=h9yTEMZ2ov6y2fem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/Gt1ilni2jaw?si=h9yTEMZ2ov6y2fem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -220,7 +220,7 @@
                     <video v-show="!showCover06" ref="videoRef14" class="videoContent" @ended="showCover06 = true" >
                         <source :src="require('@/assets/video/OMM-Chill pizza 完整版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/VblbvcUQVWM?si=iiCn4TCuaisKQJEC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/VblbvcUQVWM?si=iiCn4TCuaisKQJEC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -234,7 +234,7 @@
                     <video v-show="!showCover07" ref="videoRef15" class="videoContent" @ended="showCover07 = true" >
                         <source :src="require('@/assets/video/OMM-地方茶院 完整版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/XuI7j7fRy54?si=FYwgBNxsUnA8mt-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/XuI7j7fRy54?si=FYwgBNxsUnA8mt-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
@@ -248,7 +248,7 @@
                     <video v-show="!showCover08" ref="videoRef16" class="videoContent" @ended="showCover08 = true" >
                         <source :src="require('@/assets/video/OMM-KK cafe 完整版.mp4')" type="video/mp4">
                     </video> -->
-                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/eUc5-46Nn-M?si=UM9Guj7NZZCZy7S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="videoContent" width="560" height="315" src="https://www.youtube.com/embed/eUc5-46Nn-M?si=UM9Guj7NZZCZy7S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                 </div>
                 <!-- <div class="imgContent">
                     <h2>短影音</h2>
